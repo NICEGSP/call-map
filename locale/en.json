@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Call map",
+    "description": "A conversation view that shows which skills and MCP servers this session actually called, as an attribution tree with an unused inventory."
+  }
+}

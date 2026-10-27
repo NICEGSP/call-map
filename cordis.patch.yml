@@ -1,0 +1,9 @@
+# Call map (调用可视化): the skill / MCP attribution view.
+#
+# The Client module registers one extra Conversation View (`calls`) beside the
+# shipped `chat` and `trajectory` views. The Host half is intentionally empty:
+# every datum is folded on the Client from the session event source the
+# Session binding already publishes.
+- insert:
+    - id: call-map
+      name: 'call-map'
