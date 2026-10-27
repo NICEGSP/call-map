@@ -1,7 +1,6 @@
 {
   "name": "call-map",
   "version": "0.1.0",
-  "private": true,
   "type": "module",
   "description": "Call map: a DeepSeek Harness conversation view that shows which skills, MCP servers and subagents a session actually used, as a zoomable attribution tree.",
   "license": "MIT",
@@ -19,7 +18,8 @@
     ".": "./index.js",
     "./client": "./client.js",
     "./locale/*.json": "./locale/*.json",
-    "./icon": "./icon.svg"
+    "./icon": "./icon.svg",
+    "./icon-180": "./assets/icon-180.png"
   },
   "files": [
     "index.js",
@@ -27,6 +27,8 @@
     "cordis.patch.yml",
     "locale/*.json",
     "icon.svg",
+    "assets/*.png",
+    "screenshots.json",
     "README.md",
     "LICENSE",
     "docs/*.png"
@@ -42,5 +44,19 @@
         "@deepseek-ai/dsh-client-ui-conversation"
       ]
     }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NICEGSP/call-map.git"
+  },
+  "homepage": "https://github.com/NICEGSP/call-map#readme",
+  "bugs": {
+    "url": "https://github.com/NICEGSP/call-map/issues"
+  },
+  "author": {
+    "name": "NICEGSP"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

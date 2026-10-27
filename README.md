@@ -79,6 +79,8 @@ plugin_manager install_bundle  target = <本目录的绝对路径>
 
 安装后**刷新页面**，会话头部会多出第三个视图标签 `调用可视化`。
 
+也可以直接从 GitHub 安装：本仓库已声明 `dsh.bundle` manifest，可被 `dsh plugin add` 识别（纯 JS，无构建步骤）。插件已按 [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) 的收录规范备好元数据：`assets/icon-180.png` 为市场卡片图标，`screenshots.json` 声明商店详情页截图。
+
 **方式二：手动挂载**
 
 1. 把本目录放到任意位置；
@@ -138,6 +140,8 @@ call-map/
 ├─ locale/en.json      # 插件管理页显示名（英文）
 ├─ locale/zh.json      # 插件管理页显示名（中文）
 ├─ docs/*.png          # README 截图
+├─ assets/icon-180.png # 市场卡片图标（180×180 PNG）
+├─ screenshots.json    # 市场详情页截图声明（1–8 张）
 └─ icon.svg            # 插件图标
 ```
 
@@ -221,6 +225,8 @@ plugin_manager install_bundle  target = <absolute path to this directory>
 
 Then **reload the page**: a third view tab, `Call map`, appears next to `Chat` and `Trajectory`.
 
+You can also install straight from GitHub: the repo declares the `dsh.bundle` manifest, so `dsh plugin add` can pick it up (plain JS, no build step). Marketplace metadata follows the [awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) conventions: `assets/icon-180.png` is the storefront tile and `screenshots.json` declares the store screenshots.
+
 **Option 2 — manual mount**
 
 1. Put this directory anywhere;
@@ -280,6 +286,8 @@ call-map/
 ├─ locale/en.json      # plugin-page display name (English)
 ├─ locale/zh.json      # plugin-page display name (Chinese)
 ├─ docs/*.png          # README screenshots
+├─ assets/icon-180.png # storefront tile (180x180 PNG)
+├─ screenshots.json    # store screenshots (1-8 images)
 └─ icon.svg            # plugin icon
 ```
 
